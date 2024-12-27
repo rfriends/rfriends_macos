@@ -1,7 +1,7 @@
 rfriends_osxはosx環境でrfriends3を動作させるスクリプトです  
   
 cd ~/  
-sudo apt install git  
+brew install git  
 git clone https://github.com/rfriends/rfriends_osx.git  
 cd rfriends_osx  
 sh rfriends3_osx.sh  
