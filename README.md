@@ -12,7 +12,7 @@ sh rfriends_osx.sh
   
 cd ~/  
 cd rfriends_osx  
-sh add_lighttpd  
+sh lighttpd_install  
   
 インストール方法は以下が参考になります。 
   
