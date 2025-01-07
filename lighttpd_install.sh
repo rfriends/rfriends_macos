@@ -41,4 +41,4 @@ sudo cp -p $scr_dir/modules.conf.skel $conf_dir/modules.conf
 sudo cp -p $scr_dir/fastcgi.conf.skel $conf_dir/conf.d/fastcgi.conf
 sudo cp -p $scr_dir/webdav.conf.skel  $conf_dir/conf.d/webdav.conf
 
-brew services start lighttpd
+brew services restart lighttpd
