@@ -6,7 +6,7 @@
 ver=1.0
 # =========================================
 echo
-echo add lighttpd for mac osx Ver. $ver
+echo install lighttpd for mac osx Ver. $ver
 echo
 #
 user=`whoami`
@@ -32,8 +32,9 @@ sudo cp -n $conf_dir/modules.conf $conf_dir/modules.conf.org
 sudo cp -n $conf_dir/conf.d/fastcgi.conf $conf_dir/conf.d/fastcgi.conf.org
 sudo cp -n $conf_dir/conf.d/webdav.conf $conf_dir/conf.d/webdav.conf.org
 
-sed -e s%rfriendshomedir%$home_dir%g lighttpd.conf.skel > $scr_dir/lighttpd.conf
-sed -i s%rfriendsuser%$user%g $scr_dir/lighttpd.conf
+sudo cp -p $scr_dir/lighttpd.conf.skel  $scr_dir/lighttpd.conf
+sed -i "" s%rfriendshomedir%$home_dir%g $scr_dir/lighttpd.conf
+sed -i "" s%rfriendsuser%$user%g        $scr_dir/lighttpd.conf
 sudo cp -p $scr_dir/lighttpd.conf $conf_dir/lighttpd.conf
 
 sudo cp -p $scr_dir/modules.conf.skel $conf_dir/modules.conf
