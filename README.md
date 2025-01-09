@@ -10,6 +10,6 @@ cd rfriends_macos
 sh rfriends_macos.sh  
 sh lighttpd_install.sh  
   
-インストール方法は以下が参考になります。 
+インストール方法は以下を参考してください。 
   
 [rfriends3のインストール手順 （macOS編）](https://github.com/rfriends/rfriends_macos/wiki)
