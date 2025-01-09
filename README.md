@@ -12,5 +12,4 @@ sh lighttpd_install.sh
   
 インストール方法は以下が参考になります。 
   
-rfriends3のインストール手順 （macOS編）  
-https://rfriends.hatenablog.com/entry/2023/07/12/075527  
+[rfriends3のインストール手順 （macOS編）](https://github.com/rfriends/rfriends_macos/wiki)
