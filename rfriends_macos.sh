@@ -69,9 +69,9 @@ wget https://github.com/rfriends/rfriends3/releases/latest/download/rfriends3_la
 unzip -q -o rfriends3_latest_script.zip
 # -----------------------------------------
 #echo
-#echo rfriends3_server起動します。
-#echo
-#sh rfriends3/rfriends3_server.sh
+echo rfriends3_server起動します。
+echo
+sh rfriends3/rfriends3_server.sh
 # -----------------------------------------
 # 終了
 # -----------------------------------------
