@@ -8,10 +8,9 @@ ver=1.0
 echo
 echo install lighttpd for mac osx Ver. $ver
 echo
-echo 現在、提供を中止中です。
-echo exit 
 #
 user=`whoami`
+group=`groups $user | cut -d " " -f 1`
 home_dir=$HOME
 conf_dir=/usr/local/etc/lighttpd
 html_dir=$home_dir/rfriends3/script/html
@@ -37,6 +36,7 @@ sudo cp -n $conf_dir/conf.d/webdav.conf $conf_dir/conf.d/webdav.conf.org
 sudo cp -p $scr_dir/lighttpd.conf.skel  $scr_dir/lighttpd.conf
 sed -i "" s%rfriendshomedir%$home_dir%g $scr_dir/lighttpd.conf
 sed -i "" s%rfriendsuser%$user%g        $scr_dir/lighttpd.conf
+sed -i "" s%rfriendsgroup%$group%g        $scr_dir/lighttpd.conf
 sudo cp -p $scr_dir/lighttpd.conf $conf_dir/lighttpd.conf
 
 sudo cp -p $scr_dir/modules.conf.skel $conf_dir/modules.conf
