@@ -10,4 +10,9 @@ cd rfriends_macos
 sh rfriends_macos.sh  
 ~~sh lighttpd_install.sh~~  
   
-[rfriends3のインストール手順 （macOS編)](https://github.com/rfriends/rfriends_macos/wiki)
+[rfriends3のインストール手順 （macOS編)](https://github.com/rfriends/rfriends_macos/wiki)  
+
+> [!TIP]
+> docker compose for mac も検討してみてください。
+> 通知がなくなるメリットがあります。
+> https://github.com/rfriends/rfriends_docker/wiki  　　
