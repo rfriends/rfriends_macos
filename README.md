@@ -1,6 +1,6 @@
 rfriends_macosはmacOS環境でrfriends3を動作させるスクリプトです。  
-lighttpdをインストールすると、ビルトインサーバの起動は不要になり、http://IPアドレス:8000でアクセスできるようになります。  
-既ユーザは、sh rfriends_macos.shは不要です。  
+~~lighttpdをインストールすると、ビルトインサーバの起動は不要になり、http://IPアドレス:8000でアクセスできるようになります。~~  
+~~既ユーザは、sh rfriends_macos.shは不要です。~~  
   
 cd ~/  
 brew install git  
