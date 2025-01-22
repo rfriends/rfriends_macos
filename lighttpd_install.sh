@@ -36,7 +36,7 @@ sudo cp -n $conf_dir/conf.d/webdav.conf $conf_dir/conf.d/webdav.conf.org
 sudo cp -p $scr_dir/lighttpd.conf.skel  $scr_dir/lighttpd.conf
 sed -i "" s%rfriendshomedir%$home_dir%g $scr_dir/lighttpd.conf
 sed -i "" s%rfriendsuser%$user%g        $scr_dir/lighttpd.conf
-sed -i "" s%rfriendsgroup%$group%g        $scr_dir/lighttpd.conf
+sed -i "" s%rfriendsgroup%$group%g      $scr_dir/lighttpd.conf
 sudo cp -p $scr_dir/lighttpd.conf $conf_dir/lighttpd.conf
 
 sudo cp -p $scr_dir/modules.conf.skel $conf_dir/modules.conf
