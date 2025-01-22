@@ -8,6 +8,8 @@ ver=1.0
 echo
 echo install lighttpd for mac osx Ver. $ver
 echo
+echo 現在、提供を中止中です。
+echo exit 
 #
 user=`whoami`
 home_dir=$HOME
