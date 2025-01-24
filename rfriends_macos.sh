@@ -7,6 +7,7 @@
 # 2023/07/12 rfriends3 対応
 # 2023/07/17 7z追加
 # 2024/12/13 github
+# 2025/01/25 download from github
 # -----------------------------------------
 echo 
 echo これは macOS 用です。
@@ -65,7 +66,8 @@ echo rfriends3をインストールします。
 echo
 rm rfriends3_latest_script.zip
 #wget http://rfriends.s1009.xrea.com/files3/rfriends3_latest_script.zip
-wget https://github.com/rfriends/rfriends3/releases/latest/download/rfriends3_latest_script.zip
+#wget https://github.com/rfriends/rfriends3/releases/latest/download/rfriends3_latest_script.zip
+wget https://raw.githubusercontent.com/rfriends/rfriends3_core/main/rfriends3_latest_script.zip
 unzip -q -o rfriends3_latest_script.zip
 # -----------------------------------------
 #echo
