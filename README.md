@@ -19,7 +19,7 @@ https://github.com/rfriends/rfriends/blob/gh-pages/distro/macos.md
 > [!TIP]
 > Docker Desktope for mac も検討してみてください。
 > 通知がなくなるメリットがあります。
-> <https://github.com/rfriends/rfriends/blob/gh-pages/distro/macos.md>
+> https://github.com/rfriends/rfriends/blob/gh-pages/distro/macos.md
   
 
 
