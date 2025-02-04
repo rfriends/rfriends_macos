@@ -14,12 +14,12 @@ sh rfriends_macos.sh
 sh lighttpd_install.sh  
   
 インストール方法は以下を参照してください。  
-https://github.com/rfriends/rfriends/blob/gh-pages/distro/macos.md  
+https://rfriends.github.io/rfriends/distro/macos.html
   
 > [!TIP]
 > Docker Desktope for mac も検討してみてください。
 > 通知がなくなるメリットがあります。
-> https://github.com/rfriends/rfriends/blob/gh-pages/distro/macos.md
+> https://rfriends.github.io/rfriends/distro/docker.html
   
 
 
