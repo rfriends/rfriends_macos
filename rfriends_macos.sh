@@ -8,6 +8,7 @@
 # 2023/07/17 7z追加
 # 2024/12/13 github
 # 2025/01/25 download from github
+# 2026/06/23 add streamlink
 # -----------------------------------------
 echo 
 echo これは macOS 用です。
@@ -40,6 +41,7 @@ if [ $ans = "y" ]; then
 	brew install ffmpeg
     brew install chromium
     brew install p7zip
+    brew install streamlink
 fi
 # -----------------------------------------
 echo
