@@ -13,10 +13,10 @@ echo
 ARCH=$(uname -m)
 
 if [ "$ARCH" = "arm64" ]; then
-    // Apple Silicon
+    # Apple Silicon
     conf_dir=/opt/homebrew/etc/lighttpd
 elif [ "$ARCH" = "x86_64" ]; then
-    // Intel Mac
+    # Intel Mac
     conf_dir=/usr/local/etc/lighttpd
 else
     echo "不明なアーキテクチャです: $ARCH"
