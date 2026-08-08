@@ -9,10 +9,23 @@ echo
 echo install lighttpd for mac osx Ver. $ver
 echo
 #
+ARCH=$(uname -m)
+
+if [ "$ARCH" = "arm64" ]; then
+    // Apple Silicon
+    conf_dir=/opt/homebrew/etc/lighttpd
+elif [ "$ARCH" = "x86_64" ]; then
+    // Intel Mac
+    conf_dir=/usr/local/etc/lighttpd
+else
+    echo "不明なアーキテクチャです: $ARCH"
+    exit;
+fi
+
 user=`whoami`
 group=`groups $user | cut -d " " -f 1`
 home_dir=$HOME
-conf_dir=/usr/local/etc/lighttpd
+
 html_dir=$home_dir/rfriends3/script/html
 scr_dir=`pwd`
 
