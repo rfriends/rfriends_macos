@@ -3,7 +3,8 @@
 # lighttpd
 #
 # 1.0 2025/01/08 new
-ver=1.0
+# 1.1 2026/08/09 cpu type
+ver=1.1
 # =========================================
 echo
 echo install lighttpd for mac osx Ver. $ver
