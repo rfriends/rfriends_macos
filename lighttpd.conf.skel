@@ -470,3 +470,4 @@ include conf_dir + "/conf.d/dirlisting.conf"
 #include conf_dir + "/vhosts.d/*.conf"
 ##
 #######################################################################
+server.stream-response-body = 1
