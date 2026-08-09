@@ -1,0 +1,58 @@
+var.dir    = "rfriendsdir"
+var.hdir        = "/Users/rfriendsuser"
+var.server_root = var.hdir + "/rfriends3"
+
+server.modules = (
+    "mod_indexfile",
+    "mod_fastcgi",
+    "mod_webdav",
+    "mod_dirlisting",
+    "mod_staticfile"
+)
+
+server.document-root        = var.server_root + "/script/html"
+server.errorlog             = var.dir + "/var/log/lighttpd/error.log"
+server.username             = "rfriendsuser"
+server.groupname            = "rfriendsgroup"
+server.port                = "rfriendsport"
+server.stream-response-body = 1
+
+index-file.names = ( "index.php", "index.html" )
+mimetype.assign = (
+    ".html" => "text/html",
+    ".txt"  => "text/plain",
+    ".jpg"  => "image/jpeg",
+    ".png"  => "image/png",
+    ".css"  => "text/css",
+    ".js"   => "application/javascript"
+)
+
+$HTTP["url"] =~ "^/webdav(?:/|$)" {
+    webdav.activate          = "enable"
+    webdav.is-readonly       = "enable"
+    dir-listing.activate     = "enable"
+    dir-listing.encoding     = "utf-8"
+    dir-listing.external-css = "/dirindex.css"
+}
+
+fastcgi.map-extensions = ( ".html" => ".php" )
+
+fastcgi.server += (
+    ".php" => ((
+        "bin-path"             => var.dir + "/bin/php-cgi",
+        "socket"               => var.hdir + "/lighttpd/php-fastcgi.socket",
+        "max-procs"            => 1,
+        "bin-environment"      => (
+            "PHP_FCGI_CHILDREN"     => "4",
+            "PHP_FCGI_MAX_REQUESTS" => "10000"
+        ),
+        "broken-scriptfilename" => "enable"
+    ))
+)
+#fastcgi.server += (
+#    ".php" => ((
+#        "socket" => var.dir + "/var/run/php-fpm.sock",
+#        "broken-scriptfilename" => "enable"
+#    ))
+#)
+
