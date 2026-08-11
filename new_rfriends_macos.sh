@@ -122,6 +122,9 @@ echo
 echo lighttpd をインストールします。
 echo
 # -----------------------------------------
+cd $scr_dir
+echo $scr_dir
+
 conf_dir=${dir}/etc/lighttpd
 
 user=`whoami`
