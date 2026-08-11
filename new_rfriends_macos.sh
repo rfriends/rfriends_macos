@@ -52,10 +52,15 @@ echo "  dir : ${dir}"
 # ツールのインストール
 # -----------------------------------------
 if [ ${type} = 'brew' ]; then
-
     brew update
-    brew install php@8.5
-    brew link php@8.5
+	
+    if brew list --versions | grep -q "php"; then
+        brew install php
+        brew unlink php
+        brew link --overwrite --force php
+    else
+        brew install php
+    fi
 
     brew install wget
     brew install atomicparsley
