@@ -17,6 +17,7 @@ echo
 echo これは macOS 用です。
 echo 実行には Homebrew または MacPorts のインストールが必要になります。
 echo 
+$scr_dir=`pwd`
 # -----------------------------------------
 # ジャッジ
 # -----------------------------------------
@@ -72,7 +73,6 @@ if [ ${type} = 'brew' ]; then
     brew install streamlink
 
     brew install lighttpd
-fi
 # ----------------------------------------- port
 else
     sudo port selfupdate
@@ -130,7 +130,6 @@ home_dir=$HOME
 port=8000
 
 html_dir=$home_dir/rfriends3/script/html
-scr_dir=`pwd`
 
 mkdir -p $home_dir/lighttpd
 sudo chmod 777 ${dir}/var/log/lighttpd
